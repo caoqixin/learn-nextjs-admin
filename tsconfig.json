@@ -22,13 +22,17 @@
       "@/*": ["./*"]
     }
   },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/lib/placeholder-data.js",
-    "scripts/seed.js"
+    "app/lib/placeholder-data.ts",
+    "scripts/*"
   ],
   "exclude": ["node_modules"]
 }
